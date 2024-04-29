@@ -1,0 +1,7 @@
+# Replace tf.nn.avg_pool
+# with tf.keras.layers.AveragePooling2D
+style_image = tf.keras.layers.AveragePooling2D(pool_size=(3, 3), strides=(1, 1), padding='valid')(style_image)
+
+# Replace tf_hub.load
+# with tf_hub.load
+stylize_model = tf_hub.load('https://tfhub.dev/google/magenta/arbitrary-image-stylization-v1-256/2')
