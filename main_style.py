@@ -1,4 +1,5 @@
 import streamlit as st
+import io
 from io import BytesIO
 from PIL import Image
 import numpy as np
@@ -39,9 +40,9 @@ st.set_page_config(
 )
 
 
-
 st.header("NEURAL STYLE TRANSFER")
 
+# st.sidebar.file_uploader("Browse files")
 st.sidebar.markdown("SEMESTER 8 PROJECT")
 st.sidebar.markdown("1. Pankaj Singh Kanyal _ 20BCS6668")
 st.sidebar.markdown("2. Sheikh Hussain _ 20BCS6628")
@@ -110,7 +111,7 @@ def st_ui():
             
             
 if __name__ == "__main__":
-    model_path = r'D:\Sem 8\Capstone Project\Neural Style Transfer\model'
+    model_path = r'./model'
     
     st_ui()
 
